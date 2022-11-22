@@ -264,13 +264,13 @@ export const Skills = ({ all = true }) => {
               width: "100%",
             }}
           >
-            <Link href="/skills">
+            {/* <Link href="/skills">
               <a>
                 <Tag size={"lg"} variant="subtle" m={1}>
                   <TagLabel>{"More"}</TagLabel>
                 </Tag>
               </a>
-            </Link>
+            </Link> */}
           </div>
         )}
       </Flex>
