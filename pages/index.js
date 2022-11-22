@@ -46,7 +46,7 @@ export default function Home() {
             </Heading>
             <p
               style={{
-                color: "GrayText",
+                opacity:0.7
               }}
             >
               {IndexPageData.title}

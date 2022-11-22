@@ -72,7 +72,7 @@ export default function Navbar(props) {
           <LinkItem href={"/projects"} path={path}>
             Projects
           </LinkItem>
-          <LinkItem href={"/skills"} >Skills</LinkItem>
+          {/* <LinkItem href={"/skills"} >Skills</LinkItem> */}
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
@@ -91,9 +91,9 @@ export default function Navbar(props) {
                 <NextLink href={"/projects"} passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href={"/skills"} passHref>
+                {/* <NextLink href={"/skills"} passHref>
                   <MenuItem as={Link}>Skills</MenuItem>
-                </NextLink>
+                </NextLink> */}
               </MenuList>
             </Menu>
           </Box>
