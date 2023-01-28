@@ -22,7 +22,6 @@ import { BioSection, BioYear } from "../components/bio";
 import Layout from "@/components/article";
 import { FiGithub } from "react-icons/fi";
 import { BsFacebook, BsInstagram } from "react-icons/bs";
-import { ImFacebook } from "react-icons/im";
 import NextImage from "next/image";
 import { AiOutlineTwitter, AiFillLinkedin } from "react-icons/ai";
 import { IndexPageData } from "@/components/data";
@@ -30,6 +29,7 @@ export default function Home() {
   return (
     <Layout title={"Home Page"}>
       <>
+
         <Box
           borderRadius={"lg"}
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
@@ -46,7 +46,7 @@ export default function Home() {
             </Heading>
             <p
               style={{
-                opacity:0.7
+                opacity: 0.7
               }}
             >
               {IndexPageData.title}
@@ -81,10 +81,13 @@ export default function Home() {
               }}
             >
               <NextImage
-                objectFit="cover"
                 src={IndexPageData.profilePic.src}
-                layout="fill"
                 alt={"profile-img"}
+                width={100}
+                height={100}
+                style={{
+                  margin: "-10px"
+                }}
               />
             </div>
           </Box>
@@ -106,7 +109,7 @@ export default function Home() {
                 </NextLink> */}
               </Paragraph>
               <Box align="center" my={4}>
-                <a
+                <NextLink
                   href={IndexPageData.resumeLink}
                   target="_blank"
                   rel="noreferrer"
@@ -114,7 +117,7 @@ export default function Home() {
                   <Button rightIcon={<ChevronRightIcon />} colorScheme={"teal"}>
                     My Resume
                   </Button>
-                </a>
+                </NextLink>
               </Box>
             </Section>
           </Box>
@@ -162,7 +165,7 @@ export default function Home() {
               </Heading>
               <List>
                 <ListItem>
-                  <Link
+                  <NextLink
                     href={"https://github.com/amalpmathews2003"}
                     target="_blank"
                     rel="noreferrer"
@@ -174,9 +177,9 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={FiGithub}></Icon>}
                     ></Button>
-                  </Link>
+                  </NextLink>
 
-                  <Link
+                  <NextLink
                     href={"https://www.instagram.com/amal_p_mathews_2003/"}
                     target="_blank"
                     rel="noreferrer"
@@ -188,8 +191,8 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={BsInstagram}></Icon>}
                     ></Button>
-                  </Link>
-                  <Link
+                  </NextLink>
+                  <NextLink
                     href={"https://www.facebook.com/amalpullukottayil.mathew"}
                     target="_blank"
                     rel="noreferrer"
@@ -201,8 +204,8 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={BsFacebook}></Icon>}
                     ></Button>
-                  </Link>
-                  <Link
+                  </NextLink>
+                  <NextLink
                     href={"https://github.com/amalpmathews2003"}
                     target="_blank"
                     rel="noreferrer"
@@ -214,8 +217,8 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={AiOutlineTwitter}></Icon>}
                     ></Button>
-                  </Link>
-                  <Link
+                  </NextLink>
+                  <NextLink
                     href={"https://www.linkedin.com/in/amal-p-mathews/"}
                     target="_blank"
                     rel="noreferrer"
@@ -227,7 +230,7 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={AiFillLinkedin}></Icon>}
                     ></Button>
-                  </Link>
+                  </NextLink>
                 </ListItem>
               </List>
             </Section>
@@ -240,5 +243,6 @@ export default function Home() {
         </Section>
       </>
     </Layout>
+
   );
 }

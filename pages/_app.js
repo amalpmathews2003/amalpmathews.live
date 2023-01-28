@@ -25,7 +25,7 @@ function Website({ Component, pageProps, router }) {
 
 
       <Layout router={router}>
-        <AnimatePresence exitBeforeEnter initial={true}>
+        <AnimatePresence mode="wait" initial={true}>
           <Component {...pageProps} key={router.router} />
         </AnimatePresence>
       </Layout>

@@ -11,6 +11,7 @@ import {
   ListItem,
 } from "@chakra-ui/react";
 import NextImage from "next/image";
+import NextLink from "next/link"
 import styles from "styles/projects.module.css";
 import { FiGithub } from "react-icons/fi";
 import { BiLink } from "react-icons/bi";
@@ -34,41 +35,40 @@ const ProjectPage = ({ project }) => {
       <Stack direction={["column", null, null, "row"]} justify={"space-around"}>
         <Stack direction={["column", null, null, "row"]} justify={"center"}>
           <FiGithub {...alignCenter} />
-          <a
+          <NextLink
             {...alignCenter}
-            href={project.githubLink}
+            href={project.githubLink || ""}
             target={"_blank"}
             rel="noreferrer"
           >
             {project.githubLink}
-          </a>
+          </NextLink>
         </Stack>
         {project.url && (
           <Stack direction={["column", null, null, "row"]} justify={"center"}>
             <BiLink {...alignCenter} />
 
-            <a
+            <NextLink
               {...alignCenter}
-              href={project.url}
+              href={project.url || ""}
               target={"_blank"}
               rel="noreferrer"
             >
               {project.url}
-            </a>
+            </NextLink>
           </Stack>
         )}
       </Stack>
       <Box h={10}></Box>
       <Text>{project.description}</Text>
       <Box h={10}></Box>
-      <div className={styles["project-img-div"]}>
         <NextImage
-          objectFit={"cover"}
           src={project.image.src}
-          layout="fill"
           alt={""}
+          width={900}
+          height={200}
+          className={styles["project-img-div"]}
         />
-      </div>
       <Box h={10}></Box>
       <Stack direction={["column", null, null, "row"]} justify={"center"}>
         {project.techStack.map((tech, idx) => (

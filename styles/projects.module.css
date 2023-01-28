@@ -4,12 +4,14 @@
   overflow: hidden;
   border-radius: 10px;
 }
+
 .projects-container {
   max-width: 80vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .project-desc {
   white-space: nowrap;
   overflow: hidden;
@@ -17,16 +19,24 @@
   max-width: 300px;
   color: grey;
 }
+
 .project-img-div {
   position: relative;
-  height: 400px;
+  /* height: 400px; */
   overflow: hidden;
   /* width: 100%; */
   border-radius: 20px;
 }
+
 .textstack {
   padding: 5px 10px;
   border-radius: 20px;
   background-color: #3c3635;
   color: white;
+}
+
+@media (max-width:600px) {
+  .project-img-div {
+    height: 100px
+  }
 }

@@ -64,7 +64,6 @@ export const ImageBox = ({ project }) => {
               alt={""}
               height={230}
               width={282}
-              objectFit={"cover"}
               src={project.image.src}
             />
           </div>

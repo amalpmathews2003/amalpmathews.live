@@ -19,7 +19,7 @@ const Layout = ({ children, title }) => (
     <>
       {title && (
         <Head>
-          <title>{title}-Amal P Mathews</title>
+          <title>{`${title}-Amal P Mathews`}</title>
           <meta name="title" content={title}></meta>
           <meta property="og:title" content={title}></meta>
         </Head>
