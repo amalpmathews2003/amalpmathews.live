@@ -162,7 +162,7 @@ export default function Home() {
               </Heading>
               <List>
                 <ListItem>
-                  <a
+                  <Link
                     href={"https://github.com/amalpmathews2003"}
                     target="_blank"
                     rel="noreferrer"
@@ -174,9 +174,9 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={FiGithub}></Icon>}
                     ></Button>
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     href={"https://www.instagram.com/amal_p_mathews_2003/"}
                     target="_blank"
                     rel="noreferrer"
@@ -188,8 +188,8 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={BsInstagram}></Icon>}
                     ></Button>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={"https://www.facebook.com/amalpullukottayil.mathew"}
                     target="_blank"
                     rel="noreferrer"
@@ -201,8 +201,8 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={BsFacebook}></Icon>}
                     ></Button>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={"https://github.com/amalpmathews2003"}
                     target="_blank"
                     rel="noreferrer"
@@ -214,8 +214,8 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={AiOutlineTwitter}></Icon>}
                     ></Button>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={"https://www.linkedin.com/in/amal-p-mathews/"}
                     target="_blank"
                     rel="noreferrer"
@@ -227,7 +227,7 @@ export default function Home() {
                       colorScheme={"teal"}
                       leftIcon={<Icon as={AiFillLinkedin}></Icon>}
                     ></Button>
-                  </a>
+                  </Link>
                 </ListItem>
               </List>
             </Section>

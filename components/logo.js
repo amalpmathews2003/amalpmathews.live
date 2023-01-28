@@ -23,7 +23,6 @@ export default function Logo() {
   const logoImage = `/images/footprint${useColorModeValue("", "-dark")}.png`;
   return (
     <Link href="/">
-      <a>
         <LogoBox>
           <Image src={logoImage} width={20} height={20} alt="logo"></Image>
           <Text
@@ -35,7 +34,6 @@ export default function Logo() {
             Amal P Mathews
           </Text>
         </LogoBox>
-      </a>
     </Link>
   );
 }

@@ -23,7 +23,7 @@ export const ProjectCard = ({ project }) => {
         </Text>
         <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
           <Link href={`/projects/${project.slug}`}>
-            <a>{project.title}</a>
+            {project.title}
           </Link>
         </Heading>
         <div className={styles["project-desc"]}>{project.description}</div>
@@ -58,7 +58,6 @@ export const ImageBox = ({ project }) => {
       }}
     >
       <Link href={`/projects/${project.slug}`}>
-        <a>
           <div className={styles["next-image-div"]}>
             <NextImage
               rounded={"lg"}
@@ -69,7 +68,6 @@ export const ImageBox = ({ project }) => {
               src={project.image.src}
             />
           </div>
-        </a>
       </Link>
     </Box>
   );

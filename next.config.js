@@ -8,4 +8,7 @@ module.exports = {
       "user-images.githubusercontent.com"
     ],
   },
+  experimental: {
+    nextScriptWorkers: true,
+  },
 };
