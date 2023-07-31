@@ -9,11 +9,11 @@ export const IndexPageData = {
   technological needs of different clubs and fests. Profcient in working under pressure.
   And loves collaborating and helping innovative minds to grow.`,
   currentProject: {
-    name: "yummy",
-    url: "https://yummy.amalpmathews.tech",
+    name: "Chess PVP",
+    url: "https://chess.amalpmathews.live/",
   },
   resumeLink:
-    "https://drive.google.com/file/d/1h-lfuUjnLaeG-iaEyVSsIBXPNV4e_H6g/view?usp=sharing",
+    "https://drive.google.com/file/d/1SpctJPPU7AcjQe1nKfM7rMlKTSkBv_P_/view?usp=sharing",
   bio: [
     {
       year: "Now",
@@ -57,19 +57,19 @@ export const ProjectPageData = {
       title: "Chess Game",
       slug: "chess",
       description:
-        "A simple multiplayer chess game",
+        "A simple chess game with AI and PVP mode",
       url: "https://chess.amalpmathews.live",
       image: {
         bgColor: "white",
-        src: "/images/pf/tathva21.png",
+        src: "/images/pf/chess.png",
       },
       githubLink: "https://github.com/amalpmathews2003/chess-game",
       category: "web dev",
       techStack: [
         "Svelte",
-        "Chess.js",
-        "chessgroundx",
-        "lichess",
+        "Flast",
+        "Stockfish",
+        "Firebase",
       ],
     },
     {
@@ -115,7 +115,7 @@ export const ProjectPageData = {
       url:"https://amalpmathews2003.github.io/timetable-prettify/",
       image: {
         bgColor: "white",
-        src: "/images/pf/mp3.png",
+        src: "/images/pf/time-table.png",
       },
       githubLink: "https://github.com/amalpmathews2003/timetable-prettify",
       category: "Web dev",
