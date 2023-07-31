@@ -115,7 +115,7 @@ export const ProjectPageData = {
       url:"https://amalpmathews2003.github.io/timetable-prettify/",
       image: {
         bgColor: "white",
-        src: "/images/pf/time-table.png",
+        src: "/images/pf/time-table.jpeg",
       },
       githubLink: "https://github.com/amalpmathews2003/timetable-prettify",
       category: "Web dev",
